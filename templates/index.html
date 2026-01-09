@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fake Review Detector</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    <!-- JS -->
+    <script defer src="{{ url_for('static', filename='script.js') }}"></script>
+</head>
+<body>
+    <div class="page-wrapper">
+        <div class="container">
+            <h1>🧑‍💻 Fake Review Detection</h1>
+            <p class="subtitle">
+                Analyze Amazon product reviews and identify whether they are  
+                <span class="real-text">Real</span> or <span class="fake-text">Fake</span>
+            </p>
+
+            <div class="input-section">
+                <input
+                    type="text"
+                    id="url"
+                    placeholder="🔗 Paste Amazon Product URL here..."
+                />
+                <button onclick="analyzeReviews()">Analyze Reviews</button>
+            </div>
+
+            <div id="loading" class="loading" style="display: none;">
+                🔍 Fetching and analyzing reviews...
+            </div>
+
+            <div id="result"></div>
+        </div>
+
+        <footer>
+            <p>Powered by Machine Learning & NLP 🚀</p>
+        </footer>
+    </div>
+</body>
+</html>
