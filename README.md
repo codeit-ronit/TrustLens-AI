@@ -64,7 +64,6 @@ word2vec
 numpy
 pandas
 ```
-## 🌐 Explore the Project
-📺 YouTube Demo: [https://youtu.be/3YEDY1okU1A](https://youtu.be/3YEDY1okU1A)
 
-## Jayesh S Chauhan
+
+## Ronit kumar choudhary
