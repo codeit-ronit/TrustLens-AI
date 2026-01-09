@@ -66,4 +66,10 @@ pandas
 ```
 
 
-## Ronit kumar choudhary
+---
+
+## 👩‍💻 Author
+
+**Ronit Kumar Choudhary**  
+B.Tech CSE (AI)  
+Aspiring ML Engineer | MLOps Enthusiast
