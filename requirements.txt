@@ -1,6 +1,8 @@
 Flask
+flask-cors
+gunicorn
 beautifulsoup4
-scikit-learn
+scikit-learn==1.4.1.post1
 nltk
 requests
 word2vec
@@ -11,3 +13,5 @@ gensim
 emoji
 joblib
 textblob
+
+
