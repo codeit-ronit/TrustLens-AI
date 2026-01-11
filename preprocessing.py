@@ -1,3 +1,25 @@
+import os
+import nltk
+
+# Force NLTK data path
+NLTK_PATH = os.environ.get("NLTK_DATA", "/opt/render/nltk_data")
+nltk.data.path.append(NLTK_PATH)
+
+# Ensure required datasets exist (runtime-safe)
+for resource in [
+    "tokenizers/punkt",
+    "tokenizers/punkt_tab",
+    "corpora/stopwords",
+    "corpora/wordnet",
+    "corpora/omw-1.4"
+]:
+    try:
+        nltk.data.find(resource)
+    except LookupError:
+        nltk.download(resource.split("/")[-1], download_dir=NLTK_PATH)
+
+
+
 import re
 import emoji
 from textblob import TextBlob
